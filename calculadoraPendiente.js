@@ -14,8 +14,10 @@ function runPendiente() {
 function ecuacionRecta(x1, y1, x2, y2) {
     var m = calcularPendiente(x1, y1, x2, y2);
     var b = y1 - m * x1;
-    if (b >= 0) {
+    if (b > 0) {
         return "y = " + m + "x + " + b;
+    }else if (b == 0) {
+        return "y = " + m + "x";    
     } else {
         return "y = " + m + "x" + b;
     }
