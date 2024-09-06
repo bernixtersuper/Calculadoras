@@ -5,7 +5,7 @@ function calcularHipotenusa(a,b){
 }
 botonCalcular.addEventListener("click", function(){
     console.log("click listened")
-    calcularHipotenusa();
+    runCalculadora();
 });
 botonClear.addEventListener("click", function(){
     console.log("click listened")
